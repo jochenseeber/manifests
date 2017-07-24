@@ -1,28 +1,9 @@
-projects = [
-    "byte-buddy-annotations",
-    "gradle-api-annotations",
-    "gradle-bintray-config",
-    "gradle-docker-config",
-    "gradle-git-config",
-    "gradle-github-config",
-    "gradle-license-config",
-    "gradle-plugin-publish-config",
-    "gradle-project-config",
-    "gradle-test-kit",
-    "gradle-workspace-plugin",
-    "gradle-wsimport-demo",
-    "gradle-wsimport-plugin",
-    "guice-annotations",
-    "guice-squeezer",
-    "jdk-annotations",
-    "junit-annotations",
-    "mockito-annotations",
-]
+def PROJECTS = new FileNameFinder().getFileNames(rootDir.path, "*/build.gradle").collect { String f ->
+    new File(f).parentFile.name
+}
 
-projects.each { String project ->
-    if(new File(project).exists()) {
-	include(project)
-    }
+PROJECTS.each { String project ->
+    include(project)
 }
 
 
