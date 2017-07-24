@@ -3,6 +3,12 @@
     <remote name="origin" fetch="https://github.com/"/>
     <default revision="master" remote="origin" sync-j="4" />
 
+    <!-- Manifest -->
+    <project name="jochenseeber/manifests.git" path="manifests">
+        <linkfile src="build.gradle" dest="build.gradle" />
+        <linkfile src="settings.gradle" dest="settings.gradle" />
+    </project>
+
     <!-- Gradle plugins -->
     <project name="jochenseeber/gradle-project-plugin.git" path="gradle-project-plugin" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-bintray-config.git" path="gradle-bintray-config" groups="gradle-plugins"/>
