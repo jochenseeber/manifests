@@ -3,8 +3,8 @@
     <remote name="origin" fetch="https://github.com/" push="git@github.com"/>
     <default revision="master" remote="origin" sync-j="4" />
 
-    <!-- Manifest -->
-    <project name="jochenseeber/manifests.git" path="manifests">
+    <!-- Workspace -->
+    <project name="jochenseeber/workspace.git" path="workspace">
         <linkfile src="build.gradle" dest="build.gradle" />
         <linkfile src="settings.gradle" dest="settings.gradle" />
     </project>
