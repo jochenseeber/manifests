@@ -1,6 +1,6 @@
 <manifest>
     <!-- Common Settings -->
-    <remote name="origin" fetch="https://github.com/"/>
+    <remote name="origin" fetch="https://github.com/" push="git@github.com"/>
     <default revision="master" remote="origin" sync-j="4" />
 
     <!-- Manifest -->
