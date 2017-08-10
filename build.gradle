@@ -6,7 +6,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "me.seeber.gradle:gradle-workspace-plugin:1.1.1"
+        classpath "me.seeber.gradle:gradle-workspace-plugin:1.2.0-SNAPSHOT"
     }
 }
 
