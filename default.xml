@@ -7,6 +7,8 @@
     <project name="jochenseeber/workspace.git" path="workspace">
         <linkfile src="build.gradle" dest="build.gradle" />
         <linkfile src="settings.gradle" dest="settings.gradle" />
+        <linkfile src="gradlew" dest="gradlew" />
+        <linkfile src="gradle" dest="gradle" />
     </project>
 
     <!-- Gradle plugins -->
