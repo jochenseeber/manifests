@@ -6,8 +6,9 @@
     <!-- Manifest -->
     <project name="jochenseeber/manifests.git" path="manifests">
         <linkfile src="build.gradle" dest="build.gradle" />
-        <linkfile src="gradlew.bat" dest="gradlew.bat" />
+        <linkfile src="gradle" dest="gradle" />
         <linkfile src="gradlew" dest="gradlew" />
+        <linkfile src="gradlew.bat" dest="gradlew.bat" />
         <linkfile src="settings.gradle" dest="settings.gradle" />
     </project>
 
