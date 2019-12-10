@@ -19,10 +19,10 @@
     <project name="jochenseeber/gradle-github-config.git" path="gradle-github-config" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-license-config.git" path="gradle-license-config" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-plugin-publish-config.git" path="gradle-plugin-publish-config" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-project-config.git" path="gradle-project-config" groups="gradle-plugins"/>
+    <project name="jochenseeber/gradle-project-config.git" path="gradle-project-config" groups="gradle-plugins" revision="gradle-project-config-1.1-dev"/>
     <project name="jochenseeber/gradle-project-plugin.git" path="gradle-project-plugin" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-test-kit.git" path="gradle-test-kit" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-workspace-plugin.git" path="gradle-workspace-plugin" groups="gradle-plugins"/>
+    <project name="jochenseeber/gradle-workspace-plugin.git" path="gradle-workspace-plugin" groups="gradle-plugins" revision="gradle-workspace-plugin-1.1-dev"/>
     <project name="jochenseeber/gradle-wsimport-demo.git" path="gradle-wsimport-demo" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-wsimport-plugin.git" path="gradle-wsimport-plugin" groups="gradle-plugins"/>
 
