@@ -1,38 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Common Settings -->
-    <remote name="origin" fetch="https://github.com/" pushurl="git@github.com:"/>
-    <default revision="master" remote="origin" sync-j="4" />
-
-    <!-- Manifest -->
-    <project name="jochenseeber/manifests.git" path="manifests">
-        <linkfile src="build.gradle" dest="build.gradle" />
-        <linkfile src="gradle" dest="gradle" />
-        <linkfile src="gradlew" dest="gradlew" />
-        <linkfile src="gradlew.bat" dest="gradlew.bat" />
-        <linkfile src="settings.gradle" dest="settings.gradle" />
-    </project>
-
-    <!-- Gradle plugins -->
-    <project name="jochenseeber/gradle-bintray-config.git" path="gradle-bintray-config" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-docker-config.git" path="gradle-docker-config" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-git-config.git" path="gradle-git-config" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-github-config.git" path="gradle-github-config" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-license-config.git" path="gradle-license-config" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-plugin-publish-config.git" path="gradle-plugin-publish-config" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-project-config.git" path="gradle-project-config" groups="gradle-plugins" revision="gradle-project-config-1.1-dev"/>
-    <project name="jochenseeber/gradle-test-kit.git" path="gradle-test-kit" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-workspace-plugin.git" path="gradle-workspace-plugin" groups="gradle-plugins" revision="gradle-workspace-plugin-1.1-dev"/>
-    <project name="jochenseeber/gradle-wsimport-demo.git" path="gradle-wsimport-demo" groups="gradle-plugins"/>
-    <project name="jochenseeber/gradle-wsimport-plugin.git" path="gradle-wsimport-plugin" groups="gradle-plugins"/>
-
-    <!-- Libraries -->
-    <project name="jochenseeber/guice-squeezer.git" path="guice-squeezer" groups="3rdparty"/>
-
-    <!-- Annotation projects -->
-    <project name="jochenseeber/byte-buddy-annotations.git" path="byte-buddy-annotations" groups="annotations"/>
-    <project name="jochenseeber/gradle-api-annotations.git" path="gradle-api-annotations" groups="annotations"/>
-    <project name="jochenseeber/guice-annotations.git" path="guice-annotations" groups="annotations"/>
-    <project name="jochenseeber/jdk-annotations.git" path="jdk-annotations" groups="annotations"/>
-    <project name="jochenseeber/junit-annotations.git" path="junit-annotations" groups="annotations"/>
-    <project name="jochenseeber/mockito-annotations.git" path="mockito-annotations" groups="annotations"/>
+  <remote fetch="https://github.com/" name="origin" pushurl="git@github.com:"/>
+  
+  <default remote="origin" revision="master" sync-j="4"/>
+  
+  <project groups="annotations" name="jochenseeber/byte-buddy-annotations.git" path="byte-buddy-annotations" revision="1cd987cec446021f188e93d5d31d5841ef530044" upstream="master"/>
+  <project groups="annotations" name="jochenseeber/gradle-api-annotations.git" path="gradle-api-annotations" revision="c6da2b5ac929311bc918e34388e6cb7f255aca75" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-bintray-config.git" path="gradle-bintray-config" revision="cffd7c61e5d2daded8d5ffa97a508577b804c655" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-docker-config.git" path="gradle-docker-config" revision="27acb859fe1d88cbd50519b57039f0a1fded643b" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-git-config.git" path="gradle-git-config" revision="1d8e3d0fc3ba4839dee76c5efa57d9febdacc666" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-github-config.git" path="gradle-github-config" revision="27911bbaae3793b2ec3270a0c8c1698e230881a0" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-license-config.git" path="gradle-license-config" revision="167a7f381c73329efb547f0aec4c360b230456a9" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-plugin-publish-config.git" path="gradle-plugin-publish-config" revision="3adaaa6c0987fee6198e8ad965a87312f22d889b" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-project-config.git" path="gradle-project-config" revision="174e01c155526b430f6d4345677d1f7ac0992877" upstream="gradle-project-config-1.1-dev"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-test-kit.git" path="gradle-test-kit" revision="cb40e3e8abd63130886454e0246d94da8aebbc8d" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-workspace-plugin.git" path="gradle-workspace-plugin" revision="4aeecaa09cb5426b2975f7c81cd25f53ea8fa156" upstream="gradle-workspace-plugin-1.1-dev"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-wsimport-demo.git" path="gradle-wsimport-demo" revision="0a8efdf2623c5068dd879ef46240789417f5c633" upstream="master"/>
+  <project groups="gradle-plugins" name="jochenseeber/gradle-wsimport-plugin.git" path="gradle-wsimport-plugin" revision="9cd9bd49ddd81a61e1d4867f0bb00591091554b1" upstream="master"/>
+  <project groups="annotations" name="jochenseeber/guice-annotations.git" path="guice-annotations" revision="46168529a86df575c3d429795b37b27df9b162d7" upstream="master"/>
+  <project groups="3rdparty" name="jochenseeber/guice-squeezer.git" path="guice-squeezer" revision="41a8b19b40524ab03d0152bb01281414aa601c76" upstream="master"/>
+  <project groups="annotations" name="jochenseeber/jdk-annotations.git" path="jdk-annotations" revision="0a747f8ef482314a25591db717a752ee06acecd5" upstream="master"/>
+  <project groups="annotations" name="jochenseeber/junit-annotations.git" path="junit-annotations" revision="adc1f7da09a191abab4c08e561a1a3b240f7db28" upstream="master"/>
+  <project name="jochenseeber/manifests.git" path="manifests" revision="adcb83fca74a2d2635d799ace562cda02fc1e0d8" upstream="master">
+    <linkfile dest="build.gradle" src="build.gradle"/>
+    <linkfile dest="gradle" src="gradle"/>
+    <linkfile dest="gradlew" src="gradlew"/>
+    <linkfile dest="gradlew.bat" src="gradlew.bat"/>
+    <linkfile dest="settings.gradle" src="settings.gradle"/>
+  </project>
+  <project groups="annotations" name="jochenseeber/mockito-annotations.git" path="mockito-annotations" revision="4c6fd272adcc817f4730e0cdb73b3f2f665f7873" upstream="master"/>
 </manifest>
