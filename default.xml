@@ -3,12 +3,12 @@
     <remote name="origin" fetch="https://github.com/" pushurl="git@github.com:"/>
     <default revision="master" remote="origin" sync-j="4" />
 
-    <!-- Workspace -->
-    <project name="jochenseeber/workspace.git" path="workspace">
+    <!-- Manifest -->
+    <project name="jochenseeber/manifests.git" path="manifests">
         <linkfile src="build.gradle" dest="build.gradle" />
-        <linkfile src="settings.gradle" dest="settings.gradle" />
+        <linkfile src="gradlew.bat" dest="gradlew.bat" />
         <linkfile src="gradlew" dest="gradlew" />
-        <linkfile src="gradle" dest="gradle" />
+        <linkfile src="settings.gradle" dest="settings.gradle" />
     </project>
 
     <!-- Gradle plugins -->
@@ -19,6 +19,7 @@
     <project name="jochenseeber/gradle-license-config.git" path="gradle-license-config" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-plugin-publish-config.git" path="gradle-plugin-publish-config" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-project-config.git" path="gradle-project-config" groups="gradle-plugins"/>
+    <project name="jochenseeber/gradle-project-plugin.git" path="gradle-project-plugin" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-test-kit.git" path="gradle-test-kit" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-workspace-plugin.git" path="gradle-workspace-plugin" groups="gradle-plugins"/>
     <project name="jochenseeber/gradle-wsimport-demo.git" path="gradle-wsimport-demo" groups="gradle-plugins"/>
